@@ -142,11 +142,11 @@ class FlameAudio {
       audioCache: audioCache,
       minPlayers: minPlayers,
       maxPlayers: maxPlayers,
-      audioContext: audioContext,
+      // audioContext: audioContext,
     );
   }
 
   static final AudioContext _defaultAudioContext = AudioContextConfig(
-    focus: AudioContextConfigFocus.mixWithOthers,
+    // focus: AudioContextConfigFocus.mixWithOthers,
   ).build();
 }

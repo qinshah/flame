@@ -1,5 +1,5 @@
 name: flame_audio
-resolution: workspace
+publish_to: none
 description: |
   Audio support for the Flame game engine, basically a thin wrapper around the audioplayers package.
 version: 2.11.8
@@ -17,7 +17,11 @@ environment:
   flutter: ">=3.27.1"
 
 dependencies:
-  audioplayers: ^6.2.0
+  audioplayers:
+    git:
+      url: https://gitcode.com/openharmony-sig/flutter_audioplayers.git
+      ref: br_audioplayers-v6.1.0_ohos
+      path: packages/audioplayers
   flame: ^1.30.1
   flutter:
     sdk: flutter

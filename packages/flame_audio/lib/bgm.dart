@@ -35,7 +35,7 @@ class Bgm extends WidgetsBindingObserver {
 
     // Avoid requesting audio focus
     audioContext ??= AudioContextConfig(
-      focus: AudioContextConfigFocus.mixWithOthers,
+      // focus: AudioContextConfigFocus.mixWithOthers,
     ).build();
     await audioPlayer.setAudioContext(audioContext);
 
